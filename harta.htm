@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harta</title>
+    <style>
+      body {
+        background: url(./mottled-brick.jpeg);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+      }
+      .harta{
+          position: relative;
+      }
+      img{
+          z-index: 50;
+      }
+      .cerc{
+          position: absolute;
+          top: 30%;
+          left: 10%;
+          z-index: 100;
+          width: 200px;
+          height: 200px;
+          background-color: rgba(0, 195, 255, 0.548);
+          clip-path: circle();
+      }
+      .poligon{
+          position: absolute;
+          top: 30%;
+          right: 10%;
+          z-index: 100;
+          width: 400px;
+          height: 200px;
+          background-color: rgba(0, 195, 255, 0.548);
+      }
+
+      .cerc:hover, .poligon:hover{
+        background-color: rgba(0, 195, 255, 1);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Harta istorică a României</h1>
+    <div class="harta">
+        <a href="./lectie.htm"><div class="cerc"></div></a>
+      <a href="./lectie.htm"><div class="poligon"></div></a>
+      <img src="./harta-etnica-a-romaniei-1930_resize.png" alt="" />
+      
+    </div>
+  </body>
+</html>

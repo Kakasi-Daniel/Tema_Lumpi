@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proiect</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .tabel{
+            border: 2px solid #000;
+            padding: 2px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            width: 80%;
+        }
+        .line{
+            height: 2px;
+            width: 120%;
+            background-color: #000;
+            transform: translateX(-10%);
+        }
+        .linie{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            flex-direction: row;
+        }
+        .coloana{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .coloana1{
+            width: 200px;
+            height: 100%;
+            border-right: 2px solid #000;
+        }
+    </style>
+</head>
+<body>
+   <div class="tabel">
+       <div class="linie"><a href="./banner.htm" target="_blank">banner.htm</a></div>
+       <div class="line"></div>
+       <div class="linie">
+           <div class="coloana coloana1"><a href="./meniu.htm" target="_blank">meniu.htm</a></div>
+           <div class="coloana">
+            <a href="./acasa.htm" target="_blank">acasa.htm</a> /
+            <a href="./harta.htm" target="_blank">harta.htm</a>
+            (<a href="./lectie.htm" target="_blank">lectie.htm</a>) / 
+            <a href="./contact.htm" target="_blank">contatct.htm</a>
+           </div>
+       </div>
+   </div>
+</body>
+</html>
